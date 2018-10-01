@@ -1,0 +1,38 @@
+README
+
+** 저희가 작성한 코드는
+umlparser\src\main\java\umlparser\umlparser 에 있습니다.
+
+* 해당 프로젝트는 다음의 프로젝트를 참고하여 작성하였습니다.
+
+ - JavaParser 오픈소스 프로젝트(https://github.com/javaparser/javaparser)
+
+ - JavaParser를 이용한 uml-parser 프로젝트(https://github.com/shubhamvadhera/uml-parser)
+
+ - Gson Library
+
+
+* 동작 방법
+
+ (a) addJava 버튼을 통해 각각의 클래스를 .java 파일로 생성(한번에 한 클래스를 등록해야함)
+
+ (b) 모든 클래스를 addJava 버튼을 통해 입력한 뒤 UML<-CODE 버튼을 사용하여 UML 생성
+
+ (c) object를 추가하기 위해서는 UML<-CODE 버튼을 눌러 기존에 있는 java 파일로 UML을 생성해야 합니다. 그 후 object를 생성가능 합니다.
+     (단, 프로그램을 시작하자마자 object를 바로 생성하는 경우는 추가 예정입니다.)
+
+ (d) object를 수정하기 위해서는 해당 object를 더블클릭하여 수정할 수 있습니다.
+     (클래스명, 변수명 및 변수추가, 함수명 및 함수추가, 상속을 다룰 수 있습니다.)
+
+
+
+1. 처음 addJava로 .java파일 만들면 code폴더에 들어간다.
+
+2. UML<-CODE 버튼 클릭시 code 폴더 밑에 있는 .java 파일들의 내용과 관계를 json 형식으로 input.txt 파일에 저장된다.
+
+3. ( (c)과정이 선행되어야 함) object를 추가하고 UML->CODE 버튼을 클릭하면 umlToCode 폴더에 기존 코드와 추가한 class 파일이 생성된다.
+
+4 - 1. uml을 code로 변경시(UML->CODE 버튼 클릭시) 현재 UML을 umlinput.txt 파일로 json 형식으로 저장된다.
+
+4 - 2. 저장된 umlinput.txt를 Gson으로 해석하여 umlToCode 폴더에 각 class 파일 별로 저장되고 editExit에 자바 파일들을 출력한다.
+

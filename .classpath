@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Test Classes/class-diagram-test-1"/>
+	<classpathentry kind="src" path="Test Classes/class-diagram-test-2"/>
+	<classpathentry kind="src" path="Test Classes/class-diagram-test-3"/>
+	<classpathentry kind="src" path="Test Classes/class-diagram-test-4"/>
+	<classpathentry kind="src" path="Test Classes/class-diagram-test-5"/>
+	<classpathentry kind="src" path="Test Classes/sequence-diagram-test-1"/>
+	<classpathentry kind="src" path="umlparser/src/main/java"/>
+	<classpathentry kind="lib" path="jar/plantuml.jar"/>
+	<classpathentry kind="lib" path="umlparser.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
